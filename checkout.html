@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+     <!-- fonts links -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+     <!-- fonts links -->
+
+</head>
+<body>
+    <!-- top navbar -->
+    <div class="top-navbar">
+        <div class="top-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="other-links">
+            <button id="btn-login"><a href="login.html">Login</a></button>
+            <button id="btn-signup"><a href="signup.html">Sign up</a></button>
+
+            <div class="dropdownuser">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+              <button id="btn-cart">
+                <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a></button>
+            </div>  
+            <button id="btn-cart">
+              <a href="delivery.html"><i class="fas fa-shopping-cart"></i></a></button>
+          </div>           
+        </div>
+    </div>
+   <!-- top navbar -->
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Checkout</h1>
+
+    <!-- Order Summary -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="order-items row">
+            
+            </div>
+            <div class="total">
+              <h3>Total: <span id="total-price">৳0</span></h3>
+            </div>
+          </div>
+    <div class="checkout-form">
+    </div>
+  </div>
+  
+    
+    <!-- Shipping & Payment Information -->
+    <div class="col-md-6">
+      <h4>Shipping & Payment Information</h4>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+        <!-- Input fields for payment information -->
+        <div class="form-group">
+          <label for="card-number">Moblie Number:</label>
+          <input type="text" class="form-control" id="card-number" required>
+        </div>
+        <div class="form-group">
+          <label for="expiry-date">Amount:</label>
+          <input type="text" class="form-control" id="expiry-date" required>
+        </div>
+        <!-- Button to complete the purchase -->
+        <button type="submit" class="btn btn-primary">Complete Purchase</button>
+
+        <button type="button" class="btn btn-secondary">Delivery Details</Details></button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Our All Branches</h4>
+            <p>
+              Dhaka<br>
+              Cumilla<br>
+              Sylhet<br>
+              Chattogram <br>
+            </p>
+            <strong>Phone:</strong> 018******** <br>
+            <strong>Email:</strong> redstore12@gmail.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Links</h4>
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policey</a></li>
+           </ul>
+          </div>
+
+
+
+         
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+
+           <ul>
+            <li><a href="#">Desktop Computer</a></li>
+            <li><a href="#">Camera</a></li>
+            <li><a href="#">Gaming Laptop</a></li>
+            <li><a href="#">Mobile Phone</a></li>
+            <li><a href="#">Gaming Gadget</a></li>
+           </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Accepted Payment Methods</h4>
+            <p>We accept the following payment methods:</p>
+            <ul class="payment-icons">
+                <li><a href="checkout.html"><img src="Images/bKash-App-Logo-PNG.png" alt="Bkash"></a></li>
+                <li><a href="checkout.html"><img src="Images/Rocket-logo.png" alt="Rocket"></a></li>
+                <li><a href="checkout.html"><img src="Images/nagad.webp" alt="Nagad"></a></li>
+            </ul>
+        </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>For need any help, please contact us our social media.</p>
+
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+
+
+
+
+
+  <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
